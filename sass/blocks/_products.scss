@@ -1,6 +1,7 @@
 .products {
   background-image: url('../../images/product-1.png');
-  background-repeat: no-repeat  ;
+  background-repeat: no-repeat;
+  background-size: 23%;
 }
 
 .product__title {
@@ -16,11 +17,16 @@
 
 .product__list {
   margin: 0;
+  position: relative;
   padding: 58px 0 54px;
   display: flex;
-  gap: 32px;
   align-items: center;
   list-style: none;
+  // overflow: hidden;
+}
+
+.product__item + .product__item {
+  margin-left: 32px;
 }
 
 .product__item {
@@ -32,6 +38,8 @@
   padding: 60px 40px 60px 40px;
   width: 100%;
   max-width: 431px;
+  text-align: center;
+
 }
 
 .card__title {

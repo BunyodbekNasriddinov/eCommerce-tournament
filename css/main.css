@@ -397,29 +397,26 @@ img {
   padding: 0 20px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .products {
   background-image: url("../../images/product-1.png");
   background-repeat: no-repeat;
+  background-size: 23%;
 }
 
 .product__title {
   margin: 0;
   font-family: "Playfair Display";
   font-style: normal;
-=======
-=======
+
 .benefit-expediency {
   padding: 100px 0;
   background-color: #e0eff6;
 }
 
->>>>>>> home-benefit
 .benefit-expediency__title {
   margin: 0;
   font-family: "Playfair Display";
->>>>>>> e85117257e0e70eb9cf795b942bb7336e7210d43
+
   font-weight: 700;
   font-size: 60px;
   line-height: 85px;
@@ -427,15 +424,17 @@ img {
   color: #07484a;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .product__list {
   margin: 0;
+  position: relative;
   padding: 58px 0 54px;
   display: flex;
-  gap: 32px;
   align-items: center;
   list-style: none;
+}
+
+.product__item + .product__item {
+  margin-left: 32px;
 }
 
 .product__item {
@@ -447,6 +446,7 @@ img {
   padding: 60px 40px 60px 40px;
   width: 100%;
   max-width: 431px;
+  text-align: center;
 }
 
 .card__title {
@@ -477,14 +477,23 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #70908b;
-=======
-=======
+
 ul {
   padding: 0;
   margin: 0;
 }
 
->>>>>>> home-benefit
+}
+
+.benefit-expediency__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
 .benefit-expediency__list {
   display: flex;
   justify-content: space-between;
@@ -535,9 +544,6 @@ ul {
   font-size: 24px;
   line-height: 33px;
   color: #07484a;
-<<<<<<< HEAD
->>>>>>> e85117257e0e70eb9cf795b942bb7336e7210d43
-=======
 }
 
 .benefit-expediency__item {
@@ -612,5 +618,4 @@ ul {
     font-size: 18px;
     line-height: 23px;
   }
->>>>>>> home-benefit
 }/*# sourceMappingURL=main.css.map */
