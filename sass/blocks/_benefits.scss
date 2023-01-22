@@ -1,0 +1,48 @@
+//* Let's get started
+.benefit-expediency__title {
+  // Font styles
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 64px;
+
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+.benefit-expediency__list {
+  list-style: none;
+}
+
+.benefit-expediency__item::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-payment-method.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__subtitle {
+  // Margin, padding
+  margin: 0;
+
+  // Font styles
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 48px;
+  color: #07484a;
+}
+
+.benefit-expediency__desc {
+  // Font styles
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  line-height: 33px;
+  color: #07484a;
+}

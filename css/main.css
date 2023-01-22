@@ -394,6 +394,7 @@ img {
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
 .products {
   background-image: url("../../images/product-1.png");
   background-repeat: no-repeat;
@@ -403,6 +404,10 @@ img {
   margin: 0;
   font-family: "Playfair Display";
   font-style: normal;
+=======
+.benefit-expediency__title {
+  font-family: "Playfair Display";
+>>>>>>> e85117257e0e70eb9cf795b942bb7336e7210d43
   font-weight: 700;
   font-size: 64px;
   line-height: 85px;
@@ -410,6 +415,7 @@ img {
   color: #07484a;
 }
 
+<<<<<<< HEAD
 .product__list {
   margin: 0;
   padding: 58px 0 54px;
@@ -458,4 +464,35 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #70908b;
+=======
+.benefit-expediency__list {
+  list-style: none;
+}
+
+.benefit-expediency__item::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-payment-method.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__subtitle {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #07484a;
+}
+
+.benefit-expediency__desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #07484a;
+>>>>>>> e85117257e0e70eb9cf795b942bb7336e7210d43
 }/*# sourceMappingURL=main.css.map */
