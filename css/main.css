@@ -394,10 +394,10 @@ img {
   width: 100%;
   max-width: 1660px;
   max-width: 1640px;
-
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .main-btn {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -440,7 +440,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-.product__title {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -474,31 +473,11 @@ img {
 .hero {
   padding-top: 270px;
   padding-bottom: 354px;
-.product__wrapper {
-  position: relative;
-}
-
-.product__list,
-.slick-track {
-  margin: 0 !important;
-  gap: 32px !important;
-  right: 0 !important;
-  padding: 58px 0 54px !important;
-  display: flex !important;
-  list-style: none !important;
-}
-
-.product__item,
-.slick-slide {
-  background: #caf3e5 !important;
-  border-radius: 16px !important;
 }
 
 .hero__title {
   max-width: 668px;
   width: 100%;
-  max-width: 431px;
-  text-align: center;
 }
 .hero__title h2 {
   margin: 0;
@@ -545,10 +524,213 @@ img {
     display: none;
   }
 }
+.benefit-expediency {
+  padding: 100px 0;
+  background-color: #e0eff6;
+}
+
 .benefit-expediency__title {
+  margin: 0;
   font-family: "Playfair Display";
   font-weight: 700;
+  font-size: 60px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-expediency__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 0 0;
+  list-style: none;
+}
+
+.benefit-expediency__item--pic1::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-payment-method.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__item--pic2::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-return-policy.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__item--pic3::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-customer-support.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__subtitle {
+  margin: 0;
+  margin: 32px 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 48px;
+  color: #07484a;
+}
+
+.benefit-expediency__desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #07484a;
+}
+
+.benefit-expediency__item {
+  width: 100%;
+  max-width: 289px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .benefit-expediency__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 242px;
+  }
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benefit-expediency__list {
+    display: block;
+  }
+  .benefit-expediency__inner {
+    display: flex;
+    justify-content: center;
+  }
+  .benefit-expediency__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 288px;
+  }
+  .benefit-expediency__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .benefit-expediency__list {
+    display: block;
+  }
+  .benefit-expediency__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 242px;
+  }
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+.product__title {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
   font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+.product__wrapper {
+  position: relative;
+}
+
+.product__list,
+.slick-track {
+  margin: 0 !important;
+  gap: 32px !important;
+  right: 0 !important;
+  padding: 58px 0 54px !important;
+  display: flex !important;
+  list-style: none !important;
+}
+
+.product__item,
+.slick-slide {
+  background: #caf3e5 !important;
+  border-radius: 16px !important;
+}
+
+.card {
+  padding: 60px 40px 60px 40px;
+  width: 100%;
+  max-width: 431px;
+  text-align: center;
+}
+
+.card__title {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #70908b;
+}
+
+.card__desc {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
+}
+
+.card__price {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -569,10 +751,12 @@ img {
   text-align: center;
   color: #07484a;
 }
+
 ul {
   padding: 0;
   margin: 0;
 }
+
 .benefit-expediency__list {
   display: flex;
   justify-content: space-between;
