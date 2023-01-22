@@ -1,0 +1,65 @@
+.products {
+  background-image: url('../../images/product-1.png');
+  background-repeat: no-repeat  ;
+}
+
+.product__title {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484a;
+}
+
+.product__list {
+  margin: 0;
+  padding: 58px 0 54px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  list-style: none;
+}
+
+.product__item {
+  background: #caf3e5;
+  border-radius: 16px;
+}
+
+.card {
+  padding: 60px 40px 60px 40px;
+  width: 100%;
+  max-width: 431px;
+}
+
+.card__title {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #70908b;
+}
+
+.card__desc {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
+}
+
+.card__price {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
+}
