@@ -1,20 +1,42 @@
 //* Let's get started
+.benefit-expediency {
+  // Margin, padding
+  padding: 100px 0;
+
+  background-color: #e0eff6;
+}
+
 .benefit-expediency__title {
+  // Margin,padding
+  margin: 0;
+
   // Font styles
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 64px;
+  font-size: 60px;
 
   line-height: 85px;
   text-align: center;
   color: #07484a;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .benefit-expediency__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //   Margin,padding
+  margin: 100px 0 0 0;
+
   list-style: none;
 }
 
-.benefit-expediency__item::before {
+.benefit-expediency__item--pic1::before {
   content: "";
   width: 108px;
   height: 108px;
@@ -22,15 +44,32 @@
   display: inline-block;
 }
 
+.benefit-expediency__item--pic2::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-return-policy.svg");
+  display: inline-block;
+}
+
+.benefit-expediency__item--pic3::before {
+  content: "";
+  width: 108px;
+  height: 108px;
+  background-image: url("../../images/benefits-customer-support.svg");
+  display: inline-block;
+}
+
 .benefit-expediency__subtitle {
   // Margin, padding
   margin: 0;
+  margin: 32px 0;
 
   // Font styles
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 33px;
 
   line-height: 48px;
   color: #07484a;
@@ -45,4 +84,96 @@
 
   line-height: 33px;
   color: #07484a;
+}
+
+.benefit-expediency__item {
+  width: 100%;
+  max-width: 289px;
+  text-align: center;
+}
+
+//* ----Laptop----
+@media only screen and (max-width: 1024px) {
+  .benefit-expediency__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 242px;
+  }
+
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+//* ----Tablet----
+@media only screen and (max-width: 768px) {
+  .benefit-expediency__list {
+    display: block;
+  }
+
+  .benefit-expediency__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .benefit-expediency__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 288px;
+  }
+
+  .benefit-expediency__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+//* ----Mobile----
+@media only screen and (max-width: 320px) {
+  .benefit-expediency__list {
+    display: block;
+  }
+
+  .benefit-expediency__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .benefit-expediency__item {
+    width: 100%;
+    max-width: 242px;
+  }
+
+  .benefit-expediency__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .benefit-expediency__desc {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
