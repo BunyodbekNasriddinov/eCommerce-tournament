@@ -114,7 +114,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -374,12 +375,14 @@ main {
 
 img {
   vertical-align: middle;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -602,7 +605,6 @@ img {
     width: 100%;
   }
 }
-
 .benefit-expediency {
   padding: 100px 0;
   background-color: #e0eff6;
@@ -771,15 +773,6 @@ ul {
 
 .product__list,
 .slick-track {
-  max-width: 1865px !important;
-  margin: 0 !important;
-  gap: 32px !important;
-  right: 0 !important;
-  display: block !important;
-  margin-left: auto !important;
-  padding: 58px 0 54px !important;
-  display: flex !important;
-  list-style: none !important;
   margin: 0 !important;
   gap: 15px !important;
   right: 0 !important;
@@ -835,13 +828,13 @@ ul {
   margin: 0;
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #70908b;
   display: flex;
   justify-content: start;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .slick-initialized {
@@ -869,8 +862,9 @@ ul {
 }
 .product__link::after {
   content: "";
-  width: 13px;
-  height: 20px;
+  width: 22px;
+  background-repeat: no-repeat;
+  height: 13px;
   display: block;
   background-image: url("../../images/Icon.svg");
 }
@@ -898,6 +892,75 @@ ul {
   left: -5px;
   z-index: 1;
   border: 12px solid #70908b;
+}
+
+.package {
+  padding: 200px 0;
+}
+
+.package__wrap {
+  margin-top: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left__desc {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: #07484a;
+}
+
+.left__cart {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fdfbf8;
+  width: 100%;
+  max-width: 196px;
+  background: #70908b;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px 28px 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left__cart::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../images/korzinka.svg");
+}
+
+.left__price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  margin-top: 21px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #07484a;
 }
 
 .benefit-expediency {
