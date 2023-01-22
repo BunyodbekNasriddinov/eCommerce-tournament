@@ -6,7 +6,7 @@
   padding-top: 24px;
   background-image: url("../../images/hero-bgi.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   border-bottom-left-radius: 62px;
   border-bottom-right-radius: 62px;
 }
@@ -17,7 +17,8 @@
   justify-content: space-between;
 }
 
-.menu-btn {
+.menu-btn,
+.menu-btn-mobile {
   display: none;
 }
 
@@ -90,6 +91,7 @@
 }
 
 .hero__btn {
+  display: block;
   margin-top: 54px;
   font-family: "Open Sans";
   font-style: normal;
@@ -105,6 +107,27 @@
 //******************//
 
 @media only screen and (max-width: 1024px) {
+  .site-header {
+    background-image: url("../../images/hero-bgi-laptop.png");
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .hero__title {
+    max-width: 480px;
+    h2 {
+      font-size: 48px;
+      line-height: 62px;
+    }
+  }
+
+  .hero__text {
+    p {
+      font-size: 24px;
+      line-height: 33px;
+    }
+  }
+
   .hero {
     padding-top: 115px;
     padding-bottom: 176px;
@@ -114,12 +137,100 @@
     display: block;
   }
 
+  .menu-btn-mobile {
+    display: none;
+  }
+
   .navbar {
     display: none;
   }
 }
 
-@media only screen and (max-width: 630px) {
+//******************//
+//***   TABLET   ***//
+//******************//
+
+@media only screen and (max-width: 769px) {
+  .site-header {
+    background-image: url("../../images/hero-bgi-tablet.png");
+  }
+}
+
+//******************//
+//***   MOBILE   ***//
+//******************//
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding-top: 154px;
+    padding-bottom: 206px;
+  }
+
+  .hero__title {
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      line-height: 52px;
+    }
+  }
+
+  .hero__text {
+    p {
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+    }
+  }
+
+  .shop-btn,
+  .register-btn {
+    margin-left: 12px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn-mobile {
+    display: block;
+  }
+
+  .hero__btn {
+    margin: 54px auto 0;
+    padding: 16px 50px;
+    max-width: 191px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero__title {
+    h2 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  .hero__text {
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .search-btn,
+  .shop-btn__pic,
+  .register-btn__pic {
+    width: 21px;
+    background-size: cover;
+  }
+
+  .logo__pic {
+    width: 100%;
+  }
 }
 
 //**************//
