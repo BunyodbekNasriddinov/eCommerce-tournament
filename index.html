@@ -16,15 +16,21 @@
     <div class="container">
       <div class="site-header__inner">
         <a class="logo" href="./index.html">
+
+          <img class="logo__pic" width="144" height="36" src="./images/logo.svg" alt="Site logo" />
+
           <img class="logo__pic" width="" height="" src="./images/site-logo.svg" alt="Site logo" />
           <img class="logo__pic" width="" height="" src="./images/site-logo.svg" alt="Site logo" />
           <img class="logo__pic" width="" height="" src="./images/logo.svg" alt="Site logo" />
           <img class="logo__pic" width="" height="" src="./images/logo.svg" alt="Site logo" />   
         </a>
+        <button class="menu-btn btn-unstyled">
+          <img class="menu-btn__pic" src="./images/menu-icon.svg" width="31" height="24" alt="Menu button icon">
+        </button>
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="#">Home</a>
+              <a class="navbar__link active-link" href="./index.html">Home</a>
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#">Products</a>
@@ -40,11 +46,39 @@
             </li>
           </ul>
         </nav>
-        <button class="menu-btn main-btn" type="button">
-          <img class="menu-btn__pic" width="16" height="15" src="./images/menu-btn-logo.svg" alt="Menu button icon" />
-        </button>
+        <div class="site-header__btns">
+          <button class="search-btn btn-unstyled" type="button">
+            <img class="search-btn__pic" width="27" height="27" src="./images/search-icon.svg"
+              alt="Search button icon" />
+          </button>
+
+          <button class="shop-btn btn-unstyled" type="button">
+            <img class="shop-btn__pic" width="27" height="27" src="./images/shop-icon.svg" alt="Shop button icon" />
+
+            <button class="register-btn btn-unstyled" type="button">
+              <img class="register-btn__pic" width="27" height="27" src="./images/avatar-icon.svg"
+                alt="Register button icon" />
+            </button>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__title">
+              <h2>Exclusive Deals of Furniture Collection</h2>
+            </div>
+            <div class="hero__text">
+              <p>Explore different categories. Find the best deals.</p>
+            </div>
+            <button class="hero__btn main-btn">Shop Now</button>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
+
+  <main>
 
     <button class="menu-btn main-btn" type="button">
       <img class="menu-btn__pic" width="16" height="15" src="./images/menu-btn-logo.svg" alt="Menu button icon" />
@@ -166,6 +200,8 @@
     </div>
   </footer>
 </body>
+
+</html>
 
 </html>
               </li>

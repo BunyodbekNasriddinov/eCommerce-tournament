@@ -2,7 +2,125 @@
 //*** HERO ***//
 //************//
 
+.site-header {
+  padding-top: 24px;
+  background-image: url("../../images/hero-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom-left-radius: 62px;
+  border-bottom-right-radius: 62px;
+}
 
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 40px;
+}
+
+.navbar__link {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132.9%;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.active-link {
+  font-weight: 700;
+  border-bottom: 3px solid #ffffff;
+}
+
+.shop-btn,
+.register-btn {
+  margin-left: 58px;
+}
+
+.hero {
+  padding-top: 270px;
+  padding-bottom: 354px;
+}
+
+.hero__title {
+  max-width: 668px;
+  width: 100%;
+
+  h2 {
+    margin: 0;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    color: #07484a;
+  }
+}
+
+.hero__text {
+  p {
+    margin: 0;
+    margin-top: 16px;
+    padding: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #07484a;
+  }
+}
+
+.hero__btn {
+  margin-top: 54px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fdfbf8;
+  background-color: #70908b;
+}
+
+//******************//
+//***   DESKTOP   ***//
+//******************//
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 115px;
+    padding-bottom: 176px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+}
 
 //**************//
 //***HERO END***//

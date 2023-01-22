@@ -392,22 +392,88 @@ img {
 
 .container {
   width: 100%;
+  max-width: 1660px;
   max-width: 1640px;
+
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.product__title {
-  margin: 0;
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 85px;
-  text-align: center;
-  color: #07484a;
+.main-btn {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
 }
 
+.btn-unstyled {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.site-header {
+  padding-top: 24px;
+  background-image: url("../../images/hero-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom-left-radius: 62px;
+  border-bottom-right-radius: 62px;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+.product__title {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 40px;
+}
+
+.navbar__link {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132.9%;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.active-link {
+  font-weight: 700;
+  border-bottom: 3px solid #ffffff;
+}
+
+.shop-btn,
+.register-btn {
+  margin-left: 58px;
+}
+
+.hero {
+  padding-top: 270px;
+  padding-bottom: 354px;
 .product__wrapper {
   position: relative;
 }
@@ -428,37 +494,61 @@ img {
   border-radius: 16px !important;
 }
 
-.card {
-  padding: 60px 40px 60px 40px;
+.hero__title {
+  max-width: 668px;
   width: 100%;
   max-width: 431px;
   text-align: center;
 }
-
-.card__title {
+.hero__title h2 {
   margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484a;
+}
+
+.hero__text p {
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #07484a;
+}
+
+.hero__btn {
+  margin-top: 54px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 36px;
-  color: #70908b;
+  line-height: 33px;
+  color: #fdfbf8;
+  background-color: #70908b;
 }
 
-.card__desc {
-  margin: 0;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #70908b;
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding-top: 115px;
+    padding-bottom: 176px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
 }
-
-.card__price {
-  margin: 0;
-  font-family: "Open Sans";
-  font-style: normal;
+.benefit-expediency__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 64px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -479,12 +569,10 @@ img {
   text-align: center;
   color: #07484a;
 }
-
 ul {
   padding: 0;
   margin: 0;
 }
-
 .benefit-expediency__list {
   display: flex;
   justify-content: space-between;
