@@ -18,12 +18,16 @@
 }
 /* Arrows */
 .slick-prev {
+  padding: 16px;
   font-size: 0;
   line-height: 0;
   position: absolute;
-  bottom: 5px;
-  right: 5%;
-  display: block;
+  top: 116%;
+  right: 3%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -39,12 +43,14 @@
 }
 
 .slick-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0;
   line-height: 0;
   position: absolute;
-  bottom: 5px;
+  top: 116%;
   right: 0%;
-  display: block;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -84,26 +90,44 @@
   line-height: 1;
 
   opacity: 0.75;
-  color: white;
+  /* color: white; */
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .slick-prev:before {
-  content: "←";
+  content: "";
+  display: block;
+  width: 12px;
+  background-repeat: no-repeat;
+  height: 10px;
+  background-image: url("../../images/pro_prev.svg");
 }
 [dir="rtl"] .slick-prev:before {
-  content: "→";
+  content: "";
+  display: block;
+  width: 12px;
+  background-repeat: no-repeat;
+  height: 10px;
+  background-image: url("../../images/pro_prev.svg");
 }
-
 
 .slick-next:before {
-  content: "→";
+  content: "";
+  display: block;
+  width: 12px;
+  background-repeat: no-repeat;
+  height: 10px;
+  background-image: url("../../images/pro_next.svg");
 }
 [dir="rtl"] .slick-next:before {
-  content: "←";
+  content: "";
+  display: block;
+  width: 12px;
+  background-repeat: no-repeat;
+  height: 10px;
+  background-image: url("../../images/pro_next.svg");
 }
 
 /* Dots */
