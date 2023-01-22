@@ -114,8 +114,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -375,14 +374,12 @@ main {
 
 img {
   vertical-align: middle;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -421,7 +418,7 @@ img {
   padding-top: 24px;
   background-image: url("../../images/hero-bgi.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   border-bottom-left-radius: 62px;
   border-bottom-right-radius: 62px;
 }
@@ -432,7 +429,8 @@ img {
   justify-content: space-between;
 }
 
-.menu-btn {
+.menu-btn,
+.menu-btn-mobile {
   display: none;
 }
 
@@ -502,6 +500,7 @@ img {
 }
 
 .hero__btn {
+  display: block;
   margin-top: 54px;
   font-family: "Open Sans";
   font-style: normal;
@@ -513,6 +512,22 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
+  .site-header {
+    background-image: url("../../images/hero-bgi-laptop.png");
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  .hero__title {
+    max-width: 480px;
+  }
+  .hero__title h2 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .hero__text p {
+    font-size: 24px;
+    line-height: 33px;
+  }
   .hero {
     padding-top: 115px;
     padding-bottom: 176px;
@@ -520,10 +535,74 @@ img {
   .menu-btn {
     display: block;
   }
+  .menu-btn-mobile {
+    display: none;
+  }
   .navbar {
     display: none;
   }
 }
+@media only screen and (max-width: 769px) {
+  .site-header {
+    background-image: url("../../images/hero-bgi-tablet.png");
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero {
+    padding-top: 154px;
+    padding-bottom: 206px;
+  }
+  .hero__title h2 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .hero__text p {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .shop-btn,
+.register-btn {
+    margin-left: 12px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn-mobile {
+    display: block;
+  }
+  .hero__btn {
+    margin: 54px auto 0;
+    padding: 16px 50px;
+    max-width: 191px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hero__title h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .hero__text p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .search-btn,
+.shop-btn__pic,
+.register-btn__pic {
+    width: 21px;
+    background-size: cover;
+  }
+  .logo__pic {
+    width: 100%;
+  }
+}
+
 .benefit-expediency {
   padding: 100px 0;
   background-color: #e0eff6;
@@ -692,6 +771,15 @@ ul {
 
 .product__list,
 .slick-track {
+  max-width: 1865px !important;
+  margin: 0 !important;
+  gap: 32px !important;
+  right: 0 !important;
+  display: block !important;
+  margin-left: auto !important;
+  padding: 58px 0 54px !important;
+  display: flex !important;
+  list-style: none !important;
   margin: 0 !important;
   gap: 15px !important;
   right: 0 !important;
