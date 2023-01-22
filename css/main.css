@@ -480,12 +480,9 @@ img {
 
 .product__list,
 .slick-track {
-  max-width: 1865px !important;
   margin: 0 !important;
   gap: 32px !important;
   right: 0 !important;
-  display: block !important;
-  margin-left: auto !important;
   padding: 58px 0 54px !important;
   display: flex !important;
   list-style: none !important;
